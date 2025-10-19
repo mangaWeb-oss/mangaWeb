@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins-Black', Sans-Serif;
+}
+body {
+    position: relative;
+    display: grid;
+}
+body #menuLogo {
+    width: 100vw;
+    position: relative;
+    display: grid;
+}
+#menuLogo .opLogo {
+    width: 100vw;
+    height: 9vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0.05vh 0.05vh 0.05vh rgba(0, 0, 0, 0.5);
+}
+.opLogo .logo {
+    width: 96%;
+    margin-left: 1.5vw;
+    justify-self: center;
+    margin-top: 1vh;
+    border-radius: 3vh;
+    height: 7vh;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.3);
+}
+#menuLogo .logo h1 {
+    font-size: 2.5vh;
+    color: black;
+    font-family: 'LTHumor-Regular', Sans-Serif;
+    margin-left: 2vh;
+}
+#menuLogo .logo #imgLogoA {
+    position: relative;
+    width: 6vw;
+    height: 3.5vh;
+}
+#menuLogo .logo #imgLogoB {
+    position: relative;
+    width: 5vw;
+    height: 3vh;
+}
+#menuLogo .logo #imgLogoC {
+    position: relative;
+    width: 6vw;
+    height: 3.5vh;
+}
+#menuLogo .logo #imgLogoD {
+    position: relative;
+    width: 5vw;
+    height: 3vh;
+    margin-right: 2vh;
+}
+#menuLogo #menuDisplayPage {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+#menuLogo #menuPage {
+    transition: 0.5s;
+    transform: translateX(-200vh);
+    width: 75vw;
+    height: 100vh;
+    overflow-y: auto;
+    white-space: normal;
+    display: grid;
+    position: fixed;
+    z-index: 15;
+    background: #ffffff;
+    box-shadow: 0 0.2vh 0.2vh 0.3vh rgba(0, 0, 0, 0.5) ;
+}
+#menuLogo #menuPage #menuAkun {
+    width: 75vw;
+    height: 30vh;
+    position: relative;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.3);
+}
+#menuLogo #menuPage #menuAkun #menuAkunImages {
+    width: 15vh;
+    height: 15vh;
+    position: relative;
+    margin-top: 2vh;
+    border-radius: 50%;
+}
+#menuLogo #menuPage #menuAkun #menuNama {
+    width: 50vw;
+    height: 3vh;
+    font-size: 2vh;
+    position: relative;
+    justify-self: center;
+    background: white;
+    margin-top: 1vh;
+}
+#menuLogo #menuPage #menuAkun #menuUid {
+    width: 50vw;
+    height: 3vh;
+    position: relative;
+    font-size: 2vh;
+    justify-self: center;
+    background: white;
+    margin-top: 0.5vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#menuLogo #menuPage #menuAkun #logout {
+    width: 40vw;
+    height: 3.5vh;
+    margin-top: 0.5vh;
+    outline: none;
+    border: none;
+    font-size: 2.3vh;
+    background: #C4C4C4;
+    box-shadow: 0 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+    border-radius: 1.5vh;
+}
+#menuLogo #menuPage .page {
+    width: 75vw;
+    position: relative;
+    height: 60vh;
+    overflow-y: auto;
+    box-shadow: 0 0.1vh 0.2vh 0.1vh rgba(0, 0, 0, 0.5);
+    transform: translateY(-4.47vh);
+}
+#menuLogo #menuPage .page ul {
+    display: grid;
+    width: 75vw;
+    text-decoration: none;
+}
+#menuLogo #menuPage .page li {
+    text-decoration: none;
+    list-style: none;
+}
+#menuLogo #menuPage .page li a {
+    position: relative;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: 2vh;
+    height: 7vh;
+    margin-left: 2vh;
+    color: black;
+    list-style: none;
+    border-radius: 3vh;
+    align-items: center;
+    text-decoration: none;
+}
+#menuLogo #menuPage .page .imgPage1 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage2 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage3 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage4 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage5 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage6 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage7 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage8 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page .imgPage9 {
+    width: 5vh;
+    height: 5vh;
+}
+#menuLogo #menuPage .page span {
+    font-size: 2.5vh;
+}
+#search {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #DEDEDE;
+    display: none;
+    z-index: 20;
+}
+#search .spasiSearch {
+    width: 100vw;
+    height: 8vh;
+    position: relative;
+}
+#search .search-logo {
+    width: 100vw;
+    height: 8vh;
+    justify-self: center;
+    background: white;
+    display: flex;
+    box-shadow: 0 0 0.2vh 0 rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+}
+#search .search-logo .imgSearch1 {
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    margin-left: 2vh;
+}
+#search .search-logo #searchLogoInput {
+    width: 70vw;
+    height: 5vh;
+    text-align: center;
+    outline: none;
+    font-size: 2.3vh;
+    border-radius: 2vh;
+    border: 0.1vh solid rgba(0, 0, 0, 0.5);
+}
+#search .search-logo .imgSearch2 {
+    width: 4vh;
+    height: 4vh;
+    position: relative;
+    margin-right: 2vh;
+}
+.displayBahasa {
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    display: none;
+    z-index: 7;
+}
+.hilang .displayBahasa {
+    display: block;
+}
+#bahasa {
+    transform: translateY(-100vh);
+    transition: 1s;
+    position: fixed;
+    width: 35vw;
+    height: 25vh;
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    overflow-y: auto;
+    z-index: 8;
+    margin-top: 8vh;
+    justify-self: flex-end;
+    background: white;
+    box-shadow: 0 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.5);
+}
+.hilang #bahasa {
+    transform: translateY(0);
+}
+#bahasa ul {
+    position: relative;
+    width: 34vw
+    margin-left: 0.5vh;
+    height: 25vh;
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    text-align: center;
+    background: white;
+}
+#bahasa ul button {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    justify-content: space-between;
+    width: 33vw;
+    height: 5vh;
+    align-items: center;
+    margin-top: 1vh;
+    border-radius: 1vh;
+    background: white;
+    border: none;
+    box-shadow: 0 0.1vh 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+}
+#bahasa ul button .imgBahasa1 {
+    width: 3vh;
+    height: 3vh;
+    margin-left: 2vh;
+    border-radius: 50%;
+}
+#bahasa ul button .imgBahasa2 {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+#bahasa ul button .imgBahasa3 {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+#bahasa ul button .imgBahasa4 {
+    width: 3vh;
+    border-radius: 50%;
+    height: 3vh;
+    margin-left: 2vh;
+}
+#bahasa ul button .imgBahasa5 {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+#bahasa ul button .imgBahasa6 {
+    width: 3vh;
+    height: 3vh;
+    margin-left: 2vh;
+    border-radius: 50%;
+}
+#bahasa ul button .imgBahasa7 {
+    width: 3vh;
+    border-radius: 50%;
+    height: 3vh;
+    margin-left: 2vh;;
+}
+#bahasa ul button .imgBahasa8 {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+#bahasa ul button .imgBahasa9 {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+
+#bahasa ul button span {
+    font-size: 2vh;
+    margin-right: 2vh;
+    position: relative;
+    justify-self: center;
+    color: black;
+}
+#home {
+    width: 100vw;
+    position: absolute;
+    display: grid;
+}
+#home .spaceP1 {
+    width: 100vw;
+    height: 8vh;
+    position: rel;
+}
+#home .video {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+}
+
+#home .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home .video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: 
+    linear-gradient(to bottom, rgba(225, 225, 225, 5), transparent 10%),
+    linear-gradient(to top, rgba(225, 225, 225, 0.7), transparent 10%);
+}
+#home .halaman1 {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    display: grid;
+}
+#home .halaman1 .halamanTeks {
+    width: 20vh;
+    height: 5;
+    justify-self: flex-start;
+    position: relative;
+    background: #DEDEDE;
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+}
+#home .halaman1 #untukAnda {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    box-shadow: 0 0.1vh 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+    background: #DEDEDE;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    display: flex;
+    overflow-x: auto;
+    gap: 1vh;
+    white-space: nowrap;
+    align-items: center;
+}
+#home .halaman1 #untukAnda a {
+    position: relative;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+#home .halaman1 #untukAnda a #cardS1 {
+    width: 16.5vh;
+    height: 25vh;
+    position: relative;
+    display: grid;
+    margin-left: 2vh;
+}
+#home .halaman1 #untukAnda a #cardS1 .imgCard {
+    width: 100%;
+    height: 22vh;
+    position: relative;
+}
+#home .halaman1 #untukAnda a #cardS1 .imgCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 10%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 10%);
+}
+#home .halaman1 #untukAnda a #cardS1 .imgCard img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    position: relative;
+}
+#home .halaman1 #untukAnda a #cardS1 h4 {
+    width: 95%;
+    height: 3vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    font-size: 2vh;
+}

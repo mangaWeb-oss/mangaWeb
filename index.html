@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>MangaWeb baca manga | komik lengkap di sini aja</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="fonts.css" type="text/css" media="all" />
+        <link rel="icon" type="image/png" href="https://xarwarecloud.wuaze.com/res/images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <section id="menuLogo">
+            <div class="opLogo">
+                <div class="logo">
+                    <h1>MangaWeb</h1>
+                    <img id="imgLogoA" src="res/images/menu.png" />
+                    <img id="imgLogoB" src="res/images/search.png" />
+                    <img id="imgLogoC" onclick="imgLoC()" src="res/images/matahari.png" />
+                    <img id="imgLogoD" onclick="imgLoD()" src="res/images/default.png" />
+                </div>
+            </div>
+            <div id="menuDisplayPage"></div>
+            <div id="menuPage">
+                <div id="menuAkun">
+                    <img id="menuAkunImages" src="res/images/user.png" />
+                    <div id="menuNama"></div>
+                    <div id="menuUid"></div>
+                    <button id="logout">Logout</button>
+                </div>
+                <div class="page">
+                    <ul>
+                        <li><a href="#"><img class="imgPage1" src="res/images/home.png" /><span data-translate="welcome">Home</span></a></li>
+                        <li><a href="#"><img class="imgPage2" src="res/images/all.png" /><span>semua manga</span></a></li>
+                        <li><a href="#"><img class="imgPage3" src="res/images/p1.png" /><span>Popular</span></a></li>
+                        <li><a href="#"><img class="imgPage4" src="res/images/updateCp.png" /><span>Ongoing</span></a></li>
+                        <li><a href="#"><img class="imgPage5" src="res/images/chcklis.png" /><span>Completed</span></a></li>
+                        <li><a href="#"><img class="imgPage6" src="res/images/roler.png" /><span>Update Hari Ini</span></a></li>
+                        <li><a href="#"><img class="imgPage7" src="res/images/star.png" /><span>Rating Tinggi</span></a></li>
+                        <li><a href="#"><img class="imgPage8" src="res/images/smile.png" /><span>Genre</span></a></li>
+                        <li><a href="#"><img class="imgPage9" src="res/images/kalender.png" /><span>Yang Akan Rilis</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="search">
+            <div class="spaceSearch"></div>
+            <div class="search-logo">
+                <img class="imgSearch1" src="res/images/back.png" />
+                <input type="text" placeholder="Cari Manga!" id="searchLogoInput" />
+                <img class="imgSearch2" src="res/images/closeP.png" />
+            </div>
+        </section>
+        <div class="displayBahasa"></div>
+        <section id="bahasa">
+            <ul>
+                <button id="df"><img class="imgBahasa1" src="res/images/default.png" /><span>Devault</span></button>
+                <button id="cn"><img class="imgBahasa2" src="res/images/china.png" /><span>china</span></button>
+                <button id="id"><img class="imgBahasa3" src="res/images/indonesia.png" /><span>indonesia</span></button>
+                <button id="ar"><img class="imgBahasa4" src="res/images/arab.png" /><span>arab</span></button>
+                <button id="jw"><img class="imgBahasa5" src="res/images/jawa.png" /><span>jawa</span></button>
+                <button id="sn"><img class="imgBahasa6" src="res/images/sunda.png" /><span>sunda</span></button>
+                <button id="jp"><img class="imgBahasa7" src="res/images/jepang.png" /><span>jepang</span></button>
+                <button id="ml"><img class="imgBahasa8" src="res/images/malaysia.png" /><span>malaysia</span></button>
+            </ul>
+        </section>
+        <section id="home">
+            <div class="spaceP1"></div>
+            <div class="video">
+                <video src="res/images/w1.mp4" loop autoplay muted></video>
+            </div>
+            <div class="halaman1">
+                <div class="halamanTeks">Untuk Anda</div>
+                <div id="untukAnda">
+                    
+                </div>
+                <h1 view-num="res/raw/A Saint Joined My Party!/view.txt"></h1>
+                <button view-on="A Saint Joined My Party!">tekan</button>
+            </div>
+        </section>
+        <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+        <script src="https://xarwarecloud.wuaze.com/script.js"></script>
+        <script src="res/libs/mainAkun.js" type="text/javascript" charset="utf-8"></script>
+        <script src="res/libs/mainTranslate.js" type="text/javascript" charset="utf-8"></script>
+        <script src="res/libs/mainScroll.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
