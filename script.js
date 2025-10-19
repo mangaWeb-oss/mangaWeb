@@ -32,5 +32,5 @@ function imgLoC() {
     const imgLogoC = document.getElementById('imgLogoC');
     const drkMode = document.body.classList.contains('hytam');
     document.body.classList.toggle('hytam');
-    imgLogoC.src = drkMode ? 'https://xarwarecloud.wuaze.com/res/images/matahari.png' : 'https://xarwarecloud.wuaze.com/res/images/bulan.png';
+    imgLogoC.src = drkMode ? 'res/images/matahari.png' : 'res/images/bulan.png';
 }
