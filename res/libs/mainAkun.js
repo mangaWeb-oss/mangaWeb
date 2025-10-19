@@ -94,7 +94,7 @@ function setupViewButtons(dataJson) {
       const uid = user.uid;
 
       // Kirim ke backend Node.js di Vercel
-      fetch("https://xarware-six.vercel.app/api/viewManga", {
+      fetch("https://manga-web-one.vercel.app/api/viewManga", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ uid, path })
@@ -120,7 +120,7 @@ function tambahView(mangaPath) {
 
   const uid = user.uid;
 
-  fetch("https://xarware-six.vercel.app/api/viewManga", {
+  fetch("https://manga-web-one.vercel.app/api/viewManga", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ uid, path: mangaPath })
