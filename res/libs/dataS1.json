@@ -1,0 +1,38 @@
+{
+    "01": {
+        "judul": {
+            "id": "1-nen A-gumi no Monster",
+            "ar": "1-نين أ-غومي نو مونستر"
+        },
+        "link": {
+            "id": "#",
+            "ar": "#"
+        },
+        "icon": {
+            "id": "res/raw/1-nen A-gumi no Monster/1-nen-A-gumi-no-Monster-v01.jpg",
+            "ar": "res/raw/1-nen A-gumi no Monster/1-nen-A-gumi-no-Monster-v04.jpg"
+        },
+        "view": {
+            "id": "res/raw/1-nen-A-gumi-no-Monster-v04/view.txt",
+            "ar": "contoh dalam bahasa arab"
+        }
+    },
+    "02": {
+        "judul": {
+            "id": "A Saint Joined My Party!",
+            "ar": "!لقد انضم قديس إلى حفلتي!"
+        },
+        "link": {
+            "id": "#",
+            "ar": "#"
+        },
+        "icon": {
+            "id": "res/raw/A Saint Joined My Party!/A-Saint-Joined-My-Party-v02.jpg",
+            "ar": "res/raw/A Saint Joined My Party!/A-Saint-Joined-My-Party-v01.jpg"
+        },
+        "view": {
+            "id": "res/raw/a A-Saint-Joined-My-Party-v01/view.txt",
+            "ar": "contoh dalam bahasa arab"
+        }
+    }
+}

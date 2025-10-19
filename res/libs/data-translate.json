@@ -1,0 +1,22 @@
+{
+  "welcome": {
+    "en": "MangaWeb",
+    "id": "MangaWeb",
+    "jp": "マンガウェブ",
+    "jw": "ꦩꦁꦒ ꦮꦺꦧ꧀",
+    "su": "ᮙᮍ ᮝᮨᮘ᮪",
+    "cn": "漫画网",
+    "ar": "مانغا ويب",
+    "ms": "ماڠا ويب"
+  },
+  "about": {
+    "en": "About Us",
+    "id": "Tentang Kami",
+    "jp": "私たちについて",
+    "jw": "Babagan Kito",
+    "su": "Ngeunaan Kami",
+    "cn": "关于我们",
+    "ar": "معلومات عنا",
+    "ms": "Tentang Kami"
+  }
+}
