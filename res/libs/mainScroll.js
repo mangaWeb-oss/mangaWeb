@@ -9,7 +9,7 @@ async function loadData1() {
     if (dataCache.length === 0) {
         isLoading = true;
         try {
-            const res = await fetch('https://xarwarecloud.wuaze.com/res/libs/dataS1.json');
+            const res = await fetch('res/libs/dataS1.json');
             const data = await res.json();
 
             // ubah dari object ke array
