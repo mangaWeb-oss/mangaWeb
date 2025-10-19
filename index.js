@@ -1,29 +1,40 @@
 import express from "express";
+import fs from "fs";
+import path from "path";
 
 const app = express();
 app.use(express.json());
 
-// === ROUTE API ===
-app.post("/api/viewManga", async (req, res) => {
+// API untuk tambah view
+app.post("/api/viewManga", (req, res) => {
   try {
-    const { title } = req.body;
-    if (!title) return res.status(400).send("Title kosong");
+    const { path: filePath } = req.body;
+    if (!filePath) return res.status(400).send("Path tidak dikirim.");
 
-    // Contoh respon API (bisa kamu ganti logika view di sini)
-    return res.status(200).json({
-      message: `View manga "${title}" ditambah 1!`,
-      success: true
-    });
+    const fullPath = path.join(process.cwd(), filePath);
+
+    if (!fs.existsSync(fullPath)) {
+      return res.status(404).send("File view.txt tidak ditemukan.");
+    }
+
+    // Baca dan tambah view
+    let content = fs.readFileSync(fullPath, "utf8");
+    let match = content.match(/total_view=(\d+)/);
+    let total = match ? parseInt(match[1]) : 0;
+    total++;
+
+    fs.writeFileSync(fullPath, `total_view=${total}`);
+    return res.json({ success: true, total, message: "View berhasil ditambah." });
+
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Terjadi kesalahan server");
+    console.error("Error:", err);
+    return res.status(500).send("Terjadi kesalahan di server.");
   }
 });
 
-// === Jalankan server di lokal (saat develop manual) ===
-if (process.env.NODE_ENV !== "production") {
-  app.listen(3000, () => console.log("Server lokal jalan di http://localhost:3000"));
-}
+// Test server aktif
+app.get("/", (req, res) => {
+  res.send("✅ Server Node.js MangaWeb aktif di Vercel!");
+});
 
-// === Export buat Vercel ===
 export default app;
